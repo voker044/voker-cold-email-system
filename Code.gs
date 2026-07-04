@@ -303,7 +303,7 @@ function posaljiTalasInterno(rucno) {
 
     // 4f) Slanje — plain text, bez priloga
     try {
-      GmailApp.sendMail(primalac, subject, telo, { name: IME_POSILJAOCA });
+      GmailApp.sendEmail(primalac, subject, telo, { name: IME_POSILJAOCA });
     } catch (e) {
       dopisiNapomenu(sheet, r, 'GREŠKA pri slanju: ' + e.message);
       greske.push('Red ' + r + ': ' + e.message);
