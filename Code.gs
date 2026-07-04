@@ -33,7 +33,7 @@ var TAB_LOG         = 'Log';
 var VREMENSKA_ZONA = 'Europe/Belgrade';
 
 // Ime pošiljaoca koje gazda vidi u inboxu
-var IME_POSILJAOCA = 'Lazar — VOKER';
+var IME_POSILJAOCA = 'Lazar - VOKER';
 
 // P.S. koji se lepi na dno SVAKOG mejla (opt-out)
 var PS_TEKST = "P.S. Ako ne želite ovakve poruke, samo odgovorite 'ne' i brišem vas sa liste.";
@@ -645,28 +645,30 @@ function inicijalizujTabele() {
     sabloni.getRange(1, 1, 1, 3).setFontWeight('bold');
     sabloni.setFrozenRows(1);
 
-    var fu1Telo = 'Poštovani g. {{prezime}}, samo proveravam da li ste videli moju poruku za sajt za {{ime_lokala}}. Ponuda i dalje važi — sve napravim unapred, besplatno, platite samo ako vam se svidi.\n\nPozdrav,\nLazar';
+    // NAPOMENA: u tekstovima za gazde namerno NEMA duge crte "—" (deluje
+    // veštački) — samo obična crtica, zarez i tačka, kako ljudi stvarno kucaju.
+    var fu1Telo = 'Poštovani g. {{prezime}}, samo proveravam da li ste videli moju poruku za sajt za {{ime_lokala}}. Ponuda i dalje važi: sve napravim unapred, besplatno, platite samo ako vam se svidi.\n\nPozdrav,\nLazar';
     var fu2Telo = 'Poštovani g. {{prezime}}, poslednji put se javljam da ne smaram. Ako vam sajt za {{ime_lokala}} ikad zatreba, sačuvajte moj kontakt. Sve najbolje sa lokalom!\n\nLazar';
 
     var pocetniSabloni = [
       ['GLAVNI_DIJASPORA',
-       'Sajt za {{ime_lokala}} — besplatno da vidite, platite samo ako vam se svidi',
+       'Sajt za {{ime_lokala}} - besplatno da vidite, platite samo ako vam se svidi',
        'Poštovani g. {{prezime}},\n\n' +
-       'Našao sam {{ime_lokala}} na Google mapi — {{licna_recenica}} Ali primetio sam da nemate sajt ili se loše otvara na telefonu — a 9 od 10 gostiju danas prvo pogleda telefon.\n\n' +
+       'Našao sam {{ime_lokala}} na Google mapi - {{licna_recenica}} Ali primetio sam da nemate sajt ili se loše otvara na telefonu, a 9 od 10 gostiju danas prvo pogleda telefon.\n\n' +
        'Ja sam Lazar iz Srbije, pravim sajtove za ugostitelje. Primeri: sumski-kutak.com i portacrvenipevac.rs.\n\n' +
-       'Ponuda je prosta: napravim vam ceo sajt unapred, besplatno i bez obaveze. Ako vam se svidi — 599€ (agencije u {{grad}} naplaćuju 3.000+). Ako ne, obrišem ga i ništa ne dugujete.\n\n' +
+       'Ponuda je prosta: napravim vam ceo sajt unapred, besplatno i bez obaveze. Ako vam se svidi, cena je 599€ (agencije u {{grad}} naplaćuju 3.000+). Ako ne, obrišem ga i ništa ne dugujete.\n\n' +
        'Da vam pošaljem predlog već ove nedelje?\n\n' +
-       'Pozdrav iz Srbije,\nLazar — VOKER'],
+       'Pozdrav iz Srbije,\nLazar - VOKER'],
       ['FOLLOWUP1_DIJASPORA', 'Re: Sajt za {{ime_lokala}}', fu1Telo],
       ['FOLLOWUP2_DIJASPORA', 'Re: Sajt za {{ime_lokala}}', fu2Telo],
       ['GLAVNI_SRBIJA',
-       'Sajt za {{ime_lokala}} — besplatno da vidite, platite samo ako vam se svidi',
+       'Sajt za {{ime_lokala}} - besplatno da vidite, platite samo ako vam se svidi',
        'Poštovani g. {{prezime}},\n\n' +
-       'Našao sam {{ime_lokala}} na Google mapi — {{licna_recenica}} Primetio sam da nemate sajt ili se loše otvara na telefonu — a gosti danas prvo pogledaju telefon pre nego što izaberu gde će sesti.\n\n' +
+       'Našao sam {{ime_lokala}} na Google mapi - {{licna_recenica}} Primetio sam da nemate sajt ili se loše otvara na telefonu, a gosti danas prvo pogledaju telefon pre nego što izaberu gde će sesti.\n\n' +
        'Ja sam Lazar iz Pirota, pravim sajtove za kafane i restorane. Primeri: sumski-kutak.com i portacrvenipevac.rs.\n\n' +
-       'Ponuda je prosta: napravim vam ceo sajt unapred, besplatno i bez obaveze. Ako vam se svidi — 299€. Ako ne, obrišem ga i ništa mi ne dugujete.\n\n' +
+       'Ponuda je prosta: napravim vam ceo sajt unapred, besplatno i bez obaveze. Ako vam se svidi, cena je 200€. Ako ne, obrišem ga i ništa mi ne dugujete.\n\n' +
        'Da vam pošaljem predlog već ove nedelje?\n\n' +
-       'Pozdrav,\nLazar — VOKER'],
+       'Pozdrav,\nLazar - VOKER'],
       ['FOLLOWUP1_SRBIJA', 'Re: Sajt za {{ime_lokala}}', fu1Telo],
       ['FOLLOWUP2_SRBIJA', 'Re: Sajt za {{ime_lokala}}', fu2Telo]
     ];

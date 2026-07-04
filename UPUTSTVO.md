@@ -155,18 +155,20 @@ agenciju VOKER iz Pirota i šaljem ponude za izradu sajtova vlasnicima restorana
 kafana i kafića (balkanska dijaspora u Austriji/Nemačkoj/Švajcarskoj i gazde u Srbiji).
 
 U mom mejlu rečenica ide TAČNO na ovo mesto:
-"Našao sam {{ime_lokala}} na Google mapi — [TVOJA REČENICA] Ali primetio sam da
+"Našao sam {{ime_lokala}} na Google mapi - [TVOJA REČENICA] Ali primetio sam da
 nemate sajt ili se loše otvara na telefonu..."
 
 Za svaki lokal iz liste ispod napiši JEDNU ličnu rečenicu koja se uklapa na to
 mesto. Pravila:
 1. Srpski jezik, prirodan govorni ton (kao da pišem ja lično, ne marketing).
-2. 10–20 reči, počinje malim slovom (nastavlja se posle crte), završava tačkom.
+2. 10–20 reči, počinje malim slovom (nastavlja se posle crtice), završava tačkom.
 3. Mora da pomene NEŠTO KONKRETNO za taj lokal: ocenu ako je visoka (4.5+),
    specijalitet, atmosferu ili nešto iz recenzija/info sa Maps.
 4. Iskren kompliment, bez preterivanja i bez uzvičnika. Ako nema ničeg posebnog
    u podacima, iskoristi grad ili tip lokala, nemoj da izmišljaš činjenice.
 5. Bez ponavljanja iste formulacije — svaka rečenica različita konstrukcija.
+6. STROGO ZABRANJENA duga crta "—" bilo gde u rečenici (deluje veštački,
+   kao da je pisao AI). Koristi zarez ili tačku umesto nje.
 
 Primer dobre rečenice:
 "svaka čast na oceni 4,8, gosti u recenzijama posebno hvale vaše ćevape i domaću atmosferu."
